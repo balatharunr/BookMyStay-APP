@@ -1,22 +1,4 @@
-/**
- * BookMyStayAPP.java
- *
- * UC1: Application startup and welcome message.
- * UC2: Room modeling with abstract classes, inheritance, and static availability.
- * UC3: Centralized inventory management using HashMap.
- * UC4: Room search & availability check (read-only access).
- * UC5: Booking request intake using Queue (FIFO).
- * UC6: Reservation confirmation & room allocation with uniqueness enforcement.
- *
- * @author Aanish
- * @version 6.1
- * @version 5.1
- * @version 4.1
- *
- * @author Aanish
- * @version 3.1
- */
-
+ 
 import java.util.*;
 
 // Abstract class representing a generalized Room
