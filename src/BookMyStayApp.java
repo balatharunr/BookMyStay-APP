@@ -1,12 +1,4 @@
-/**
- * UseCase1HotelBookingApp.java
- *
- * This class represents the entry point of the Hotel Booking Management System.
- * It demonstrates how a Java application begins execution and produces console output.
- *
- * @author Aanish
- * @version 1.0
- */
+
 public class BookMyStayAPP{
 
     /**
