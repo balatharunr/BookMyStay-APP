@@ -9,6 +9,18 @@ public class RoomInventory {
             inventory.put("Suite", 2);
         }
         int getAvailability(String roomType){
-            return inventory.get(roomType);
+            Integer count = inventory.get(roomType);
+            if(count != null) 
+                return count;
+            return 0;
+        }
+        void updateAvailability(String roomType, int newCount){
+            inventory.put(roomType,newCount);
+        }
+        void displayInventory(){
+            for(String roomType : inventory.keySet()){
+                Integer count = inventory.get(roomType);
+                System.out.println(roomType+" Room Available: "+ count);
+            }
         }
 }
