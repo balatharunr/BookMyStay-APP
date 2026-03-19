@@ -8,14 +8,7 @@ public class BookMyStayApp{
         Room doubleRoom = new DoubleRoom();
         Room suiteRoom = new SuiteRoom();
         RoomInventory inventory = new RoomInventory();
-        System.out.println("Single Room:");
-        singleRoom.displayRoomDetails();
-        System.out.println("Single: "+ inventory.getAvailability("Single")); 
-        System.out.println("Double Room:");
-        doubleRoom.displayRoomDetails();
-        System.out.println("Double: "+ inventory.getAvailability("Double")); 
-        System.out.println("Suite Room:");
-        suiteRoom.displayRoomDetails();
-        System.out.println("Suite: "+ inventory.getAvailability("Suite"));
+        RoomSearchService searchRoom = new RoomSearchService();
+        searchRoom.searchAvailableRooms(inventory, singleRoom, doubleRoom, suiteRoom);
     }
 }
